@@ -1,0 +1,55 @@
+<div class="container">
+  <h1>LISTADO DE CLIENTES</h1>
+  <br />
+
+  <!--Construcion de data Clientes-->
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Identificacón</th>
+          <th scope="col">Celular</th>
+          <th scope="col">Email</th>
+          <th scope="col">Altura mts</th>
+          <th scope="col">Peso kg</th>
+          <th scope="col">Observación</th>
+          <th scope="col">Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cliente">
+          <td scope="row">{{ item.id }}</td>
+          <td>{{ item.nombre }} {{ item.apellidos }}</td>
+          <td>{{ item.identificacion }}</td>
+          <td>{{ item.celular }}</td>
+          <td>{{ item.email }}</td>
+          <td>{{ item.altura }}</td>
+          <td>{{ item.peso }}</td>
+          <td>{{ item.observacion }}</td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              (click)="listar(item)"
+              [routerLink]="['/editar']"
+            >
+              Editar
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              (click)="eliminar(item.id)"
+              [routerLink]="['/clientes']"
+            >
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--Fin de tabla-->
+</div>

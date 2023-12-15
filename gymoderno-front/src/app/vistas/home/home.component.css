@@ -1,0 +1,15 @@
+p{
+    text-align: center;
+}
+img{
+    height: 420px;
+    width: 100%;
+}
+p{
+    width: 60%;
+    text-align: center;
+}
+.centerp{
+    display: flex;
+    justify-content: center;
+}

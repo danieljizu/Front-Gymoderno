@@ -1,0 +1,22 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+  }
+  
+  #pagina {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  #contenido {
+    padding-bottom:50px; /* este valor debe ser igual o mayor al alto del pie */
+  }
+  
+  footer{
+    height:50px;
+    line-height:50px;
+    bottom:0;
+    left:0;
+    width:100%;
+  }

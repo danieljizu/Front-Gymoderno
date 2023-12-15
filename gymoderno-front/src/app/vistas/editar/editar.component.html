@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row align-items-center">
+    <div>
+      <h1>ACTUALIZA TU INFORMACIÓN</h1>
+    </div>
+    <br>
+    <br>
+    <div class="col">
+      <form [formGroup]="clientes">
+
+        <div class="form-group">
+            <label for="id" class="form-label" hidden>Id</label>
+            <input type="number" class="form-control" formControlName="id" id="id"  hidden/>
+          </div>
+        <div class="form-group">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" formControlName="nombre" id="nombre"  />
+        </div>
+
+        <div class="form-group">
+          <label for="apellidos" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" formControlName="apellidos" id="apellidos" />
+        </div>
+
+        <div class="form-group">
+          <label for="identificacion" class="form-label">Identificación</label>
+          <input type="number" class="form-control" formControlName="identificacion" id="identificacion" />
+        </div>
+
+        <div class="form-group">
+            <label for="peso" class="form-label">Peso KG</label>
+            <input type="number" class="form-control" formControlName="peso" id="peso" />
+          </div>
+
+          <div class="form-group">
+            <label for="altura" class="form-label">Altura Mtrs</label>
+            <input type="number" class="form-control" formControlName="altura" id="altura" />
+          </div>
+
+          <div class="form-group">
+            <label for="celular" class="form-label">Celular</label>
+            <input type="number" class="form-control" formControlName="celular" id="celular" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" formControlName="email" id="email" />
+          </div>
+        <br />
+        <button class="btn btn-primary" (click)="guardar()" [disabled]="clientes.invalid" [routerLink]="['/clientes']" >Enviar</button>
+      </form>
+    </div>
+
+    <div class="col">
+      <img src="../../../assets/img/form.jfif" />
+    </div>
+  </div>
+</div>
+
+
+
+

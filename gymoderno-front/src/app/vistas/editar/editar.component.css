@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+input{
+    width: 50%;
+}
+img{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    margin-top: 20px;
+}
